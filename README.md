@@ -1,8 +1,8 @@
-\# Supply Chain Analytics | MySQL \& Power BI
+# Supply Chain Analytics | MySQL & Power BI
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -14,41 +14,41 @@ The objective is to transform raw operational data into cleaned, validated datas
 
 
 
-\*\*Project Type:\*\* End-to-End Data Analytics
+**Project Type:** End-to-End Data Analytics
 
-\*\*Tools:\*\* MySQL 8.0, Microsoft Power BI, DAX
+**Tools:** MySQL 8.0, Microsoft Power BI, DAX
 
-\*\*Dataset:\*\* Synthetic supply chain data covering January 2024 to December 2025
-
-
-
-\---
+**Dataset:** Synthetic supply chain data covering January 2024 to December 2025
 
 
 
-\## Business Objectives
+---
 
 
 
-\* Analyze inventory availability and stock status.
-
-\* Evaluate purchase-order delivery performance against expected delivery dates.
-
-\* Monitor sales order outcomes and delivered sales value.
-
-\* Analyze shipment delays, delivery duration, and shipping costs.
-
-\* Examine logistics performance and shipment delay reasons.
-
-\* Present operational KPIs through an interactive Power BI dashboard.
+## Business Objectives
 
 
 
-\---
+* Analyze inventory availability and stock status.
+
+* Evaluate purchase-order delivery performance against expected delivery dates.
+
+* Monitor sales order outcomes and delivered sales value.
+
+* Analyze shipment delays, delivery duration, and shipping costs.
+
+* Examine logistics performance and shipment delay reasons.
+
+* Present operational KPIs through an interactive Power BI dashboard.
 
 
 
-\## Tools \& Technologies
+---
+
+
+
+## Tools & Technologies
 
 
 
@@ -66,11 +66,11 @@ The objective is to transform raw operational data into cleaned, validated datas
 
 
 
-\---
+---
 
 
 
-\## Data Structure
+## Data Structure
 
 
 
@@ -96,15 +96,15 @@ The dataset contains seven tables representing different aspects of supply chain
 
 | `shipments`       |      5,000 | Shipment records, delivery performance, shipping costs, and delay analysis                |
 
-| \*\*Total\*\*         | \*\*35,722\*\* | \*\*Records across seven tables\*\*                                                           |
+| **Total**         | **35,722** | **Records across seven tables**                                                           |
 
 
 
-\---
+---
 
 
 
-\## Data Model
+## Data Model
 
 
 
@@ -116,55 +116,55 @@ The data model was configured in Power BI to support the dashboard's analytical 
 
 
 
-\---
+---
 
 
 
-\## Project Workflow
+## Project Workflow
 
 
 
-\### 1. Data Profiling
+### 1. Data Profiling
 
 
 
-\* Examined the source tables and their structures.
+* Examined the source tables and their structures.
 
-\* Reviewed record counts and data-quality issues.
+* Reviewed record counts and data-quality issues.
 
-\* Checked identifiers, missing values, and relationships between tables.
+* Checked identifiers, missing values, and relationships between tables.
 
-\* Identified inconsistencies requiring cleaning or validation.
-
-
-
-\### 2. Data Cleaning
+* Identified inconsistencies requiring cleaning or validation.
 
 
 
-\* Standardized inconsistent product-category names.
-
-\* Reviewed invalid and negative product prices.
-
-\* Examined missing and inconsistent values.
-
-\* Checked key fields and relationships between tables.
-
-\* Recalculated purchase-order delivery statuses using expected and actual delivery dates.
+### 2. Data Cleaning
 
 
 
-\### 3. Data Validation
+* Standardized inconsistent product-category names.
+
+* Reviewed invalid and negative product prices.
+
+* Examined missing and inconsistent values.
+
+* Checked key fields and relationships between tables.
+
+* Recalculated purchase-order delivery statuses using expected and actual delivery dates.
 
 
 
-\* Compared original and cleaned table record counts.
+### 3. Data Validation
 
-\* Checked for missing identifiers and orphan records.
 
-\* Validated purchase-order delivery classifications against the underlying dates.
 
-\* Confirmed that the key data-quality and relationship checks passed.
+* Compared original and cleaned table record counts.
+
+* Checked for missing identifiers and orphan records.
+
+* Validated purchase-order delivery classifications against the underlying dates.
+
+* Confirmed that the key data-quality and relationship checks passed.
 
 
 
@@ -172,31 +172,31 @@ The cleaned tables retained their expected record counts, and the key validation
 
 
 
-\### 4. Power BI Dashboard Development
+### 4. Power BI Dashboard Development
 
 
 
-\* Connected the cleaned data to Power BI.
+* Connected the cleaned data to Power BI.
 
-\* Configured the data model.
+* Configured the data model.
 
-\* Created DAX measures for business KPIs.
+* Created DAX measures for business KPIs.
 
-\* Developed a four-page interactive dashboard.
+* Developed a four-page interactive dashboard.
 
-\* Presented operational metrics and business findings through visualizations.
-
-
-
-\---
+* Presented operational metrics and business findings through visualizations.
 
 
 
-\## Dashboard Pages
+---
 
 
 
-\### Page 1: Executive Overview
+## Dashboard Pages
+
+
+
+### Page 1: Executive Overview
 
 
 
@@ -204,7 +204,7 @@ Provides a high-level summary of supply chain performance through key performanc
 
 
 
-\### Page 2: Inventory \& Warehouses
+### Page 2: Inventory & Warehouses
 
 
 
@@ -212,7 +212,7 @@ Analyzes inventory availability, stock status, and warehouse-level inventory pat
 
 
 
-\### Page 3: Procurement \& Suppliers
+### Page 3: Procurement & Suppliers
 
 
 
@@ -220,7 +220,7 @@ Evaluates purchase-order delivery performance by comparing actual delivery dates
 
 
 
-\### Page 4: Sales \& Logistics
+### Page 4: Sales & Logistics
 
 
 
@@ -228,11 +228,11 @@ Analyzes sales order outcomes, shipment performance, delivery delays, shipping c
 
 
 
-\---
+---
 
 
 
-\## Business Rules: Purchase-Order Delivery Status
+## Business Rules: Purchase-Order Delivery Status
 
 
 
@@ -252,11 +252,11 @@ Purchase-order delivery status was validated using a strict comparison between t
 
 
 
-During validation, \*\*372 purchase orders initially classified as On Time were found to have actual delivery dates one day later than their expected dates\*\*. These records were reclassified as Delayed to ensure consistency with the defined business rule.
+During validation, **372 purchase orders initially classified as On Time were found to have actual delivery dates one day later than their expected dates**. These records were reclassified as Delayed to ensure consistency with the defined business rule.
 
 
 
-\### Final Purchase-Order Delivery Performance
+### Final Purchase-Order Delivery Performance
 
 
 
@@ -270,7 +270,7 @@ During validation, \*\*372 purchase orders initially classified as On Time were 
 
 | On Time         |             794 |     15.88% |
 
-| \*\*Total\*\*       |       \*\*5,000\*\* |   \*\*100%\*\* |
+| **Total**       |       **5,000** |   **100%** |
 
 
 
@@ -278,11 +278,11 @@ This correction demonstrates the importance of validating business classificatio
 
 
 
-\---
+---
 
 
 
-\## Key Performance Indicators
+## Key Performance Indicators
 
 
 
@@ -314,19 +314,19 @@ This correction demonstrates the importance of validating business classificatio
 
 
 
-\*Sales value and shipping cost are expressed in the units used by the dataset and dashboard.\*
+*Sales value and shipping cost are expressed in the units used by the dataset and dashboard.*
 
 
 
-\---
+---
 
 
 
-\## Key Business Insights
+## Key Business Insights
 
 
 
-\### 1. Purchase-Order Delays
+### 1. Purchase-Order Delays
 
 
 
@@ -334,7 +334,7 @@ Of the 5,000 purchase orders, 2,399 (47.98%) were delivered after their expected
 
 
 
-\### 2. Early Deliveries
+### 2. Early Deliveries
 
 
 
@@ -342,7 +342,7 @@ A total of 1,807 purchase orders (36.14%) arrived before their expected dates, w
 
 
 
-\### 3. Inventory Availability
+### 3. Inventory Availability
 
 
 
@@ -350,7 +350,7 @@ The inventory analysis identified 3,216 low-stock records and 442 out-of-stock r
 
 
 
-\### 4. Sales Order Performance
+### 4. Sales Order Performance
 
 
 
@@ -358,7 +358,7 @@ Of the 18,000 sales orders, 15,286 were delivered, resulting in a delivered orde
 
 
 
-\### 5. Shipment Delays
+### 5. Shipment Delays
 
 
 
@@ -366,7 +366,7 @@ The delayed shipment rate was 17.5%. Investigating shipment delay patterns and r
 
 
 
-\### 6. Data Quality and Validation
+### 6. Data Quality and Validation
 
 
 
@@ -374,49 +374,49 @@ Comparing actual delivery dates against expected delivery dates identified 372 p
 
 
 
-\*These findings describe the synthetic dataset and should not be interpreted as actual company performance.\*
+*These findings describe the synthetic dataset and should not be interpreted as actual company performance.*
 
 
 
-\---
+---
 
 
 
-\## Repository Structure
+## Repository Structure
 
 
 
 ```text
 
-Supply-Chain-Analytics/
+Supply-Chain-Analytics
 
 │
 
-├── Dashboard\_Screenshots/
+├── Dashboard_Screenshots
 
-│   ├── 01\_Executive\_Overview.png
+│   ├── 01_Executive_Overview.png
 
-│   ├── 02\_Inventory\_Warehouses.png
+│   ├── 02_Inventory_Warehouses.png
 
-│   ├── 03\_Procurement\_Suppliers.png
+│   ├── 03_Procurement_Suppliers.png
 
-│   └── 04\_Sales\_Logistics.png
-
-│
-
-├── PowerBI/
-
-│   └── SupplyChain\_Dashboard.pbix
+│   └── 04_Sales_Logistics.png
 
 │
 
-├── SQL/
+├── PowerBI
 
-│   ├── 01\_SupplyChain\_Data\_Profiling.sql
+│   └── SupplyChain_Dashboard.pbix
 
-│   ├── 02\_SupplyChain\_Data\_Cleaning.sql
+│
 
-│   └── 03\_SupplyChain\_Data\_Validation.sql
+├── SQL
+
+│   ├── 01_SupplyChain_Data_Profiling.sql
+
+│   ├── 02_SupplyChain_Data_Cleaning.sql
+
+│   └── 03_SupplyChain_Data_Validation.sql
 
 │
 
@@ -426,45 +426,45 @@ Supply-Chain-Analytics/
 
 
 
-\*Ensure the filenames shown above match the actual files in your project folders.\*
+*Ensure the filenames shown above match the actual files in your project folders.*
 
 
 
-\---
+---
 
 
 
-\## Skills Demonstrated
+## Skills Demonstrated
 
 
 
-\* SQL querying and data profiling
+* SQL querying and data profiling
 
-\* Data cleaning and validation
+* Data cleaning and validation
 
-\* Business-rule implementation
+* Business-rule implementation
 
-\* Relational data analysis
+* Relational data analysis
 
-\* Power BI data modeling
+* Power BI data modeling
 
-\* DAX measures and KPI development
+* DAX measures and KPI development
 
-\* Dashboard design and data visualization
+* Dashboard design and data visualization
 
-\* Business performance analysis
+* Business performance analysis
 
-\* Translating data findings into actionable areas for investigation
+* Translating data findings into actionable areas for investigation
 
-\* GitHub project organization
-
-
-
-\---
+* GitHub project organization
 
 
 
-\## Project Disclaimer
+---
+
+
+
+## Project Disclaimer
 
 
 
@@ -472,7 +472,7 @@ This project uses synthetic data for educational and portfolio purposes. The ana
 
 
 
-\*\*Dataset Period:\*\* January 2024 – December 2025
+**Dataset Period:** January 2024 – December 2025
 
 
 
