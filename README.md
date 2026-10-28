@@ -62,7 +62,7 @@ The objective is to transform raw operational data into cleaned, validated datas
 
 | DAX                | KPI calculations and business measures                  |
 
-| Git \& GitHub       | Version control and project portfolio management        |
+| Git & GitHub       | Version control and project portfolio management        |
 
 
 
@@ -90,9 +90,9 @@ The dataset contains seven tables representing different aspects of supply chain
 
 | `inventory`       |      6,000 | Stock quantities, reserved quantities, available stock, inventory dates, and stock status |
 
-| `purchase\_orders` |      5,000 | Purchase-order records and procurement delivery performance                               |
+| `purchase_orders` |      5,000 | Purchase-order records and procurement delivery performance                               |
 
-| `sales\_orders`    |     18,000 | Sales order records, order statuses, and sales performance                                |
+| `sales_orders`    |     18,000 | Sales order records, order statuses, and sales performance                                |
 
 | `shipments`       |      5,000 | Shipment records, delivery performance, shipping costs, and delay analysis                |
 
